@@ -10,10 +10,10 @@ const HeroContainer = styled.div`
     background-position: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     color: white;
-    text-align: center;
+    text-align: left;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -31,13 +31,15 @@ const HeroContainer = styled.div`
   `
 
 const HeroText = styled.div`
-position: relative;
+max-width: 680px;
+text-align: left;
+color: #ffffff;
+padding-left: 40px;
 z-index: 2;
-max-width: 800px;
-padding: 20px;
+position: relative;
 
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   margin-bottom: 10px;
 }
 
@@ -50,8 +52,17 @@ const HeroSection = () => {
 return (
   <HeroContainer>
     <HeroText>
-      <h1>YOUR ONE STOP SHOP</h1>
-      <p>FOR MAILBOX RENTAL, SHIPPING & MORE</p>
+      <h1>
+        YOUR<br />
+        ONE <br />
+        STOP <br />
+        SHOP
+        </h1>
+      <p>
+        In Prescott Valley<br />
+        For Mailbox Rentals,<br />
+         Shipping, <br />
+        & MORE!</p>
     </HeroText>
   </HeroContainer>
 );
