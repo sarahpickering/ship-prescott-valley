@@ -31,8 +31,7 @@ function App() {
         <GlobalStyle />
         <Header />
         <MainContent>
-        <Home />
-          <NavBar />
+          <Home />
           </MainContent>
     </Router>
   )
