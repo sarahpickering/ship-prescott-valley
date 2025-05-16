@@ -4,19 +4,16 @@ import { Link } from 'react-router-dom'
 
 const NavLinks = styled.nav`
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    background-color: #ffffff;
-    padding: 10px;
-    color: #021635;
-    font-weight: 500;
+    gap: 40px;
+    align-items: center;
     text-decoration: none`
 
     const NavLink = styled(Link)`
         color: #021635;
         text-decoration: none;
-        font-size: 18px;
-        padding: 10px 15px;
+        font-size: 22px;
+        font-weight: 500;
+
         
         &:hover {
             background-color: #ffffff;
