@@ -35,7 +35,6 @@ function App() {
         <GlobalStyle />
         <Header />
         <MainContent>
-          <HeroSection />
           <InfoStrip />
           <Home />
           </MainContent>
