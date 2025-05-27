@@ -4,10 +4,13 @@ import HeroSection from './Hero';
 import styled from 'styled-components';
 //import { SectionContainer, SectionTitle, SectionText } from './Styles/globalStyle';
 
+
+
 function Home() {
     return (
         <>
-        <HeroSection />
+        
+        
         </>
     )
 }
