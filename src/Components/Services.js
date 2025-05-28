@@ -23,10 +23,10 @@ const ServicesTitle = styled.h2`
 `;
 
 const ServicesGrid = styled.div`
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
-  flex-wrap: wrap;
+  align-items: stretch;
 `;
 
 
@@ -35,16 +35,16 @@ const ServicesCard = styled.div`
     color: #000B58;
     border-radius: 10px;
     padding: 20px;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;     
-    flex-basis: 250px; 
     height: 100%;
 `;
+
 
 const ServicesImage = styled.img`
     width: 100%;
@@ -104,7 +104,7 @@ const Services = () => {
                 </ContentWrapper>
                 <ServicesButton to="/mailbox-rentals">Sign Up</ServicesButton>
             </ServicesCard>
-
+            
             <ServicesCard>
                 <ServicesImage src={shipping} alt="Worldwide Shipping" />
                 <ContentWrapper>
@@ -114,11 +114,12 @@ const Services = () => {
                 <ServicesDescription>
                 We offer the best available rates from all three major global shipping companies, 
                 including FedEx, UPS, and USPS. We aggregate the best available rates from all 
-                shipping companies to ensure you receive the best rate! <br />
+                shipping companies to ensure you receive the best rate.
                 </ServicesDescription>
                 </ContentWrapper>
                 <ServicesButton to="/worldwide-shipping">Learn More</ServicesButton>
             </ServicesCard>
+            
 
             <ServicesCard>
                 <ServicesImage src={notary} alt="Notary Services" />
@@ -127,12 +128,16 @@ const Services = () => {
                     Notary Services
                 </h2>
                 <ServicesDescription>
-                $10 notary anytime Monday-Saturday 9am-6pm, no appointment needed! Walk-in ok!
+                $10 notary anytime Monday-Saturday 9am-6pm, no appointment needed! Walk-ins are 
+                always welcome and we offer fast, friendly service. <br />
+                From real estate documents to power of attorney forms and affidavits, we can 
+                notarize a wide variety of documents and help answer any basic questions you 
+                may have about the process.
                 </ServicesDescription>
                 </ContentWrapper>
                 <ServicesButton to="/notary-services">Learn More</ServicesButton>
-
             </ServicesCard>
+           
 
             <ServicesCard>
                 <ServicesImage src={businesssolutions} alt="Business Solutions" />
@@ -141,12 +146,16 @@ const Services = () => {
                     Business Solutions
                 </h2>
                 <ServicesDescription>
-                We offer Registered Agent Services, Business Address, Mail Acceptance, Secure Shredding, Printing, and more.
+                We offer Registered Agent Services, Business Address setup, Mail Acceptance, 
+                Secure Shredding, Printing, and more. We support startups, freelancers, and 
+                established businesses alike.  <br />
+                Our services are designed to streamline your operations, protect your privacy, 
+                and give your business a professional presence — all under one roof.
                 </ServicesDescription>
                 </ContentWrapper>
                 <ServicesButton to="/business-solutions">Learn More</ServicesButton>
-
             </ServicesCard>
+           
 
             </ServicesGrid>
         </ServicesContainer>
