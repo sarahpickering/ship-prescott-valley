@@ -93,16 +93,16 @@ const Services = () => {
                     Mailbox Rental
                 </h2>
                 <h3>
-                    From $20/Month
+                    From $32/Month
                 </h3>
                 <ServicesDescription>
                     Ship Prescott Valley offers affordable, safe and secure mailboxes 
-                    for both personal and business use starting at just $30/month. 
+                    for both personal and business use starting at just $32/month. 
                     Enjoy the convenience of text 
-                    message alerts when a new delivery comes in.
+                    message alerts when a new delivery comes in. Virtual Mailboxes Available!
                 </ServicesDescription>
                 </ContentWrapper>
-                <ServicesButton to="/mailbox-rentals">Sign Up</ServicesButton>
+                <ServicesButton to="/mailbox-rental">Sign Up</ServicesButton>
             </ServicesCard>
             
             <ServicesCard>
