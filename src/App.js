@@ -6,6 +6,7 @@ import HeroSection from './Components/Hero';
 import Home from './Components/Home'
 import InfoStrip from './Components/InfoStrip';
 import MailboxRental from './Components/MailboxRental';
+import Notary from './Components/Notary'
 import Footer from './Components/Footer';
 
 import { createGlobalStyle } from 'styled-components'
@@ -39,6 +40,7 @@ function App() {
           <Routes>
             <Route path="/" element ={<Home />} />
             <Route path="/mailbox-rental" element={<MailboxRental />} />
+            <Route path="/notary" element={<Notary />} />
           </Routes>
         </MainContent>
         <InfoStrip />
