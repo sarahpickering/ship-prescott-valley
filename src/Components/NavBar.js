@@ -24,7 +24,7 @@ const NavLinks = styled.nav`
             return (
                 <NavLinks>
                     <NavLink to="/">Home</NavLink>
-                    <NavLink to="/mailboxrental">Mailbox Rental</NavLink>
+                    <NavLink to="/mailbox-rental">Mailbox Rental</NavLink>
                     <NavLink to="/notary">Notary Services</NavLink>
                     <NavLink to="/shipping">Worldwide Shipping</NavLink>
                     <NavLink to="/business">Business Solutions</NavLink>
