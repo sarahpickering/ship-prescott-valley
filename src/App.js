@@ -1,13 +1,15 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header';
 import NavBar from './Components/NavBar';
+import HeroSection from './Components/Hero';
+import Home from './Components/Home'
 import InfoStrip from './Components/InfoStrip';
-import Home from './Components/Home';
+import Footer from './Components/Footer';
 
 import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components'
-import HeroSection from './Components/Hero';
+
 
 const GlobalStyle = createGlobalStyle`
   body, h1, nav, a {
@@ -28,16 +30,17 @@ const MainContent = styled.div`
 `;
 
 function App() {
-  //const location = useLocation();
-
   return (
     <Router>
         <GlobalStyle />
         <Header />
         <MainContent>
-          <InfoStrip />
-          <Home />
-          </MainContent>
+          <Routes>
+            <Route path="/" element ={<Home />} />
+          </Routes>
+        </MainContent>
+        <InfoStrip />
+        <Footer />
     </Router>
   )
 }
