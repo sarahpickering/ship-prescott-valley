@@ -11,7 +11,7 @@ const AddressStrip = styled.div`
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     `;
 
