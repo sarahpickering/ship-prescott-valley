@@ -43,6 +43,7 @@ function App() {
             <Route path="/mailbox-rental" element={<MailboxRental />} />
             <Route path="/notary" element={<Notary />} />
             <Route path="/shipping" element={<WorldwideShipping />} />
+            <Route path ="/business" element={<BusinessSolutions />} />
           </Routes>
         </MainContent>
         <InfoStrip />
