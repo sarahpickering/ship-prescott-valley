@@ -6,12 +6,14 @@ const Container = styled.div`
   max-width: 1000px;
   margin: auto;
   padding: 40px 20px;
+  border: 10px solid #000b58;
 `;
 
 const Title = styled.h1`
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 20px;
+  color: #000b58;
 `;
 
 const HeroSection = styled.div`
@@ -48,13 +50,14 @@ const Intro = styled.p`
 const Section = styled.div`
   margin-bottom: 40px;
   text-align: center;
+  color: #000b58;
 `;
 
 const List = styled.ul`
   list-style-position: inside;
   padding-left: 20px;
   line-height: 1.8;
-  color: #444;
+  color: #000b58;
 `;
 
 const CTA = styled.div`
@@ -62,6 +65,7 @@ const CTA = styled.div`
   margin-top: 50px;
   font-size: 1.2rem;
   font-weight: bold;
+  color: #f82f23;
 `;
 
 
@@ -99,7 +103,7 @@ const WorldwideShipping = () => {
                     <li>UPS</li>
                     <li>FedEx</li>
                     <li>USPS</li>
-                    <li>DHL Express</li>
+                    <li>DHL</li>
                 </List>
             </Section>
 

@@ -9,11 +9,12 @@ const Container = styled.div`
     max-width: 900px;
     margin: auto;
     background-color: #fff;
+    border: 10px solid #000b58;
 `;
 
 const Title = styled.h1`
     font-size: 2.5rem;
-    color: 333;
+    color: #000b58;
     text-align:center;
     margin-bottom: 20px;
 `;

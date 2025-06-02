@@ -7,11 +7,12 @@ const Container = styled.div`
     max-width: 900px;
     margin: auto;
     background-color: #fff;
+    border: 10px solid #000b58;
 `;
 
 const Title = styled.h1`
     font-size: 2.5rem;
-    color: 333;
+    color: #000b58;
     text-align:center;
     margin-bottom: 20px;
 ;`
@@ -42,7 +43,7 @@ const Benefit = styled.li`
         content: "✔";
         position: absolute;
         left: 0;
-        color: #0077cc;
+        color: #000b58;
     }
 `;
 
@@ -52,7 +53,7 @@ const CTA = styled.div`
 
     a {
         display: inline-block;
-        background-color: #0077cc;
+        background-color: #000b58;
         color: #fff;
         padding: 12px 24px;
         font-size: 1rem;
@@ -61,7 +62,7 @@ const CTA = styled.div`
         transition: background-color 0.3s;
 
         &:hover {
-            background-color: #005fa3;
+            background-color:rgb(17, 127, 191);
         }
     }
 `;
@@ -114,7 +115,7 @@ const PriceCard = styled.div`
     h3 {
         margin-bottom: 10px;
         font-size: 1.2rem;
-        color: #0077cc;
+        color: #000b58;
     }
 
     p {

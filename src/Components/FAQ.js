@@ -10,7 +10,7 @@ const Container = styled.div`
 const Title = styled.h1`
   text-align: center;
   font-size: 2.5rem;
-  color: #222;
+  color: #000b58;
   margin-bottom: 40px;
 `;
 
@@ -88,6 +88,7 @@ const FAQSection = ({ title, questions }) => {
     
 
 const FAQ = () => {
+    
     const mailboxFAQs = [
         {
             q: "How much does a mailbox rental cost?",
@@ -138,7 +139,7 @@ const FAQ = () => {
     return (
         <Container>
             <Title>
-
+                Frequently Asked Questions:
             </Title>
             <FAQSection title="📬 Mailbox Rental" questions={mailboxFAQs} />
             <FAQSection title="📦 Shipping" questions={shippingFAQs} />
