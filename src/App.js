@@ -11,6 +11,7 @@ import Footer from './Components/Footer';
 
 import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components'
+import WorldwideShipping from './Components/WorldwideShipping';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -41,6 +42,7 @@ function App() {
             <Route path="/" element ={<Home />} />
             <Route path="/mailbox-rental" element={<MailboxRental />} />
             <Route path="/notary" element={<Notary />} />
+            <Route path="/shipping" element={<WorldwideShipping />} />
           </Routes>
         </MainContent>
         <InfoStrip />
