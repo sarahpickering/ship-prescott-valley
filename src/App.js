@@ -13,6 +13,7 @@ import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components'
 import WorldwideShipping from './Components/WorldwideShipping';
 import BusinessSolutions from './Components/BusinessSolutions';
+import FAQ from './Components/FAQ';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -45,6 +46,7 @@ function App() {
             <Route path="/notary" element={<Notary />} />
             <Route path="/shipping" element={<WorldwideShipping />} />
             <Route path ="/business" element={<BusinessSolutions />} />
+            <Route path ="/faq" element={<FAQ />} />
           </Routes>
         </MainContent>
         <InfoStrip />
