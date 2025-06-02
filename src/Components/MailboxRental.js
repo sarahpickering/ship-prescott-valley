@@ -172,7 +172,7 @@ const MailboxRental = () => {
                         <p>$55/month</p>
                     </PriceCard>
                     <PriceCard>
-                        <h3>Extra Large Business</h3>
+                        <h3>XL Business</h3>
                         <p>$65/month</p>
                     </PriceCard>
                 </PricingGrid>
