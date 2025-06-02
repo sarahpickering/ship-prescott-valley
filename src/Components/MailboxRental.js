@@ -58,6 +58,7 @@ const CTA = styled.div`
         padding: 12px 24px;
         font-size: 1rem;
         border-radius: 5px;
+        border: 5px solid #cc0000;
         text-decoration: none;
         transition: background-color 0.3s;
 
