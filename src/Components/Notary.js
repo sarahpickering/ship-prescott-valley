@@ -90,6 +90,7 @@ const Notary = () => {
             </MoreInfo>
             {/* </Content> */}
         </Container>
+       
     )
 
 }

@@ -188,4 +188,4 @@ const MailboxRental = () => {
     )
 }
 
-export default MailboxRental
+export default MailboxRental;
