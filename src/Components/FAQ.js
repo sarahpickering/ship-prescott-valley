@@ -53,5 +53,35 @@ const Answer = styled.div`
 `;
 
 
+const FAQSection = ({ title, questions }) => {
+    const [activeIndex, setActiveIndex] = useState(null);
+  
+    const toggleAnswer = (index) => {
+      setActiveIndex(index === activeIndex ? null : index);
+    }
+}
 
-export default FAQ;
+const FAQ = () => {
+    const mailboxFAQs = [
+
+    ]
+    const shippingFAQs = [
+
+    ]
+    const notaryFAQs = [
+
+    ]
+
+    return (
+        <Container>
+            <Title>
+
+            </Title>
+            <FAQSection title="📬 Mailbox Rental" questions={mailboxFAQs} />
+            <FAQSection title="📦 Shipping" questions={shippingFAQs} />
+            <FAQSection title="📝 Notary & Other Services" questions={notaryFAQs} />
+        </Container>
+    )
+}
+
+export default FAQ
