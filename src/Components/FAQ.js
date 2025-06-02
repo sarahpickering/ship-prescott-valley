@@ -49,9 +49,9 @@ const Question = styled.button`
 
 const Arrow = styled.span`
     display: inline-block;
-    transition: transform: 0.3s ease;
+    transition: transform 0.3s ease;
     font-size: 1.2rem;
-    transform: ${ ({ isOpen }) => (isOpen ? 'rotate(90deg' : 'rotate(0deg') }
+    transform: ${({ $isOpen }) => ($isOpen ? 'rotate(90deg)' : 'rotate(0deg)')};
 `;
 
 const Answer = styled.div`
@@ -71,17 +71,18 @@ const FAQSection = ({ title, questions }) => {
       setActiveIndex(index === activeIndex ? null : index);
     }
     return (
-        <>
+        <div>
           <SectionTitle>{title}</SectionTitle>
-          {questions.map((faq, index) => (
+          {questions.map((item, index) => (
             <FAQItem key={index}>
               <Question onClick={() => toggleAnswer(index)}>
-                {faq.q}
+                {item.q}
+                <Arrow $isOpen={activeIndex === index}>▶</Arrow>
               </Question>
-              {activeIndex === index && <Answer>{faq.a}</Answer>}
+              {activeIndex === index && <Answer>{item.a}</Answer>}
             </FAQItem>
           ))}
-        </>
+        </div>
       )
     }
     
