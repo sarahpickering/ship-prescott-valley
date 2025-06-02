@@ -12,6 +12,7 @@ import Footer from './Components/Footer';
 import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components'
 import WorldwideShipping from './Components/WorldwideShipping';
+import BusinessSolutions from './Components/BusinessSolutions';
 
 
 const GlobalStyle = createGlobalStyle`
