@@ -34,6 +34,7 @@ const ServicesCard = styled.div`
     background: white;
     color: #000B58;
     border-radius: 10px;
+    border: 10px solid #cc0000;
     padding: 20px;
     width: 100%;
     max-width: 250px;
@@ -68,7 +69,7 @@ const ServicesButton = styled(Link)`
     padding: 10px 20px;
     background-color: #000b58;
     color: white;
-    border: none;
+    border: 5px solid #cc0000;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
