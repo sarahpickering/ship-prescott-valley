@@ -38,9 +38,20 @@ const Question = styled.button`
   border-radius: 6px;
   transition: background 0.3s;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   &:hover {
     background-color: #002855;
   }
+`;
+
+const Arrow = styled.span`
+    display: inline-block;
+    transition: transform: 0.3s ease;
+    font-size: 1.2rem;
+    transform: ${ ({ isOpen }) => (isOpen ? 'rotate(90deg' : 'rotate(0deg') }
 `;
 
 const Answer = styled.div`
@@ -59,17 +70,68 @@ const FAQSection = ({ title, questions }) => {
     const toggleAnswer = (index) => {
       setActiveIndex(index === activeIndex ? null : index);
     }
-}
+    return (
+        <>
+          <SectionTitle>{title}</SectionTitle>
+          {questions.map((faq, index) => (
+            <FAQItem key={index}>
+              <Question onClick={() => toggleAnswer(index)}>
+                {faq.q}
+              </Question>
+              {activeIndex === index && <Answer>{faq.a}</Answer>}
+            </FAQItem>
+          ))}
+        </>
+      )
+    }
+    
 
 const FAQ = () => {
     const mailboxFAQs = [
-
+        {
+            q: "How much does a mailbox rental cost?",
+            a: "Mailbox prices start at $32/month depending on size and service level."
+          },
+          {
+            q: "Can I use your address as my business address?",
+            a: "Yes! We offer mailbox services suitable for business use including registered agent services."
+          },
+          {
+            q: "Do I need to be local to rent a mailbox?",
+            a: "No — we also offer virtual mailboxes and mail forwarding anywhere in the U.S."
+          },
+          {
+            q: "What is a virtual mailbox?",
+            a: "A virtual mailbox with Ship Prescott Valley gives you a real street address where we receive your mail on your behalf and forward it to you anywhere in the world."
+          }
     ]
     const shippingFAQs = [
-
+        {
+            q: "Do you ship internationally?",
+            a: "Yes, we offer worldwide shipping through trusted carriers including UPS, FedEx, and DHL."
+          },
+          {
+            q: "Can I bring in my own packaging?",
+            a: "Absolutely — or we can pack it for you professionally on-site."
+          },
+          {
+            q: "What shipping options do you provide?",
+            a: "We offer express, ground, and international shipping with tracking and insurance options."
+          }
     ]
     const notaryFAQs = [
-
+        {
+            q: "Do I need an appointment for notary services?",
+            a: "No appointment needed — just bring your unsigned documents and a valid photo ID."
+          },
+          {
+            q: "What types of documents can you notarize?",
+            a: "Real estate forms, court documents, medical waivers, school forms, and more."
+          },
+          {
+            q: "How much does notarization cost?",
+            a: "We charge just $10 per signature for notary services."
+          }
     ]
 
     return (
