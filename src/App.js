@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
 import Header from './Components/Header';
 import NavBar from './Components/NavBar';
 import HeroSection from './Components/Hero';
@@ -37,6 +38,7 @@ const MainContent = styled.div`
 function App() {
   return (
     <Router>
+      <ScrollToTop />
         <GlobalStyle />
         <Header />
         <MainContent>
