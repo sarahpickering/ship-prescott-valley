@@ -77,7 +77,12 @@ const ImageWrapper = styled.div`
 
 const BusinessSolutions = () => {
     return (
+        <Container>
+            <Title>Streamline Your Business</Title>
+            <Subtitle>Solutions for Small Businesses in Prescott Valley</Subtitle>
 
+            
+        </Container>
     )
 }
 
