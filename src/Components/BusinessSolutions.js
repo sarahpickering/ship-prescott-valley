@@ -80,8 +80,29 @@ const BusinessSolutions = () => {
         <Container>
             <Title>Streamline Your Business</Title>
             <Subtitle>Solutions for Small Businesses in Prescott Valley</Subtitle>
+            <FlexSection>
+            <TextContent>
+                <List>
+                    <ListItem>Registered Agent Services</ListItem>
+                    <ListItem>Business Address & Mail Acceptance</ListItem>
+                    <ListItem>Secure Shredding ($1/lb via Assured Document Destruction)</ListItem>
+                    <ListItem>Professional Printing Services</ListItem>
+                    <ListItem>Banner & Sign Printing</ListItem>
+                    <ListItem>Fax Services</ListItem>
+                    <ListItem>Passport Photos</ListItem>
+                    <ListItem>Fingerprinting</ListItem>
+                    <ListItem>Bulk Document Shredding</ListItem>
+                </List>
+                <Paragraph>
+                    Contact us today or visit us in-store to find out how Ship Prescott Valley can help your business run more efficiently.
+                </Paragraph>
+            </TextContent>
 
-            
+                <ImageWrapper>
+                    <img src={passport} alt="Business solutions at Ship Prescott Valley" />
+                </ImageWrapper>
+            </FlexSection>
+
         </Container>
     )
 }
