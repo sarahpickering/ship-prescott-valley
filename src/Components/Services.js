@@ -118,7 +118,7 @@ const Services = () => {
                 shipping companies to ensure you receive the best rate.
                 </ServicesDescription>
                 </ContentWrapper>
-                <ServicesButton to="/worldwide-shipping">Learn More</ServicesButton>
+                <ServicesButton to="/shipping">Learn More</ServicesButton>
             </ServicesCard>
             
 
@@ -136,7 +136,7 @@ const Services = () => {
                 may have about the process.
                 </ServicesDescription>
                 </ContentWrapper>
-                <ServicesButton to="/notary-services">Learn More</ServicesButton>
+                <ServicesButton to="/notary">Learn More</ServicesButton>
             </ServicesCard>
            
 
@@ -154,7 +154,7 @@ const Services = () => {
                 and give your business a professional presence — all under one roof.
                 </ServicesDescription>
                 </ContentWrapper>
-                <ServicesButton to="/business-solutions">Learn More</ServicesButton>
+                <ServicesButton to="/business">Learn More</ServicesButton>
             </ServicesCard>
            
 
