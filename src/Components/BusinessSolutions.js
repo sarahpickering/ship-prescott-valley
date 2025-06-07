@@ -6,21 +6,21 @@ const Container = styled.div`
     max-width: 1100px;
     margin: auto;
     padding: 40px 20px;
-    background-color: #fff;
-    border: 10px solid #000b58;
+    background-color: #000b58;
+    border: 10px solid #cc0000;
 `
 
 const Title = styled.h1`
     font-size: 2.5rem;
     text-align: center;
-    color: #000b58;
+    color: #fff;
     margin-bottom: 20px
 `
 
 const Subtitle = styled.h2`
     font-size: 1.5rem;
     text-align: center;
-    color: #444;
+    color: #fff;
     margin-bottom: 40px;
 `
 
@@ -41,6 +41,7 @@ const List = styled.ul`
     list-style: none;
     padding: 0;
     margin-bottom: 30px;
+    color: #fff;
 `
 
 const ListItem = styled.li`
@@ -58,7 +59,7 @@ const ListItem = styled.li`
 `
 const Paragraph = styled.p`
     font-size: 1.1rem;
-    color: #555;
+    color: #fff;
     margin-bottom: 30px;
 
 `
