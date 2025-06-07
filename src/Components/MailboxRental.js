@@ -6,13 +6,13 @@ const Container = styled.div`
     padding: 40px 20px;
     max-width: 900px;
     margin: auto;
-    background-color: #fff;
-    border: 10px solid #000b58;
+    background-color: #000B58;
+    border: 10px solid #cc0000;
 `;
 
 const Title = styled.h1`
     font-size: 2.5rem;
-    color: #000b58;
+    color: #fff;
     text-align:center;
     margin-bottom: 20px;
 ;`
@@ -20,7 +20,7 @@ const Title = styled.h1`
 const Intro = styled.p`
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #555;
+    color: #fff;
     text-align: center;
     margin-bottom: 40px;
 `;
@@ -37,13 +37,13 @@ const Benefit = styled.li`
     margin-bottom: 20px;
     padding-left: 1.5rem;
     position: relative;
-    color: #444;
+    color: #fff;
 
     &::before {
         content: "✔";
         position: absolute;
         left: 0;
-        color: #000b58;
+        color: #fff;
     }
 `;
 
@@ -53,8 +53,8 @@ const CTA = styled.div`
 
     a {
         display: inline-block;
-        background-color: #000b58;
-        color: #fff;
+        background-color: #fff;
+        color: #000B58;
         padding: 12px 24px;
         font-size: 1rem;
         border-radius: 5px;
@@ -88,7 +88,7 @@ const PricingSection = styled.div`
 const PricingTitle = styled.h2`
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #cc0000;
 `;
 
 const PricingGrid = styled.div`
@@ -127,7 +127,7 @@ const PriceCard = styled.div`
 
 const VirtualOption = styled.p`
   font-size: 1.1rem;
-  color: #444;
+  color: #fff;
   text-align: center;
   margin: 30px 0;
 `;
