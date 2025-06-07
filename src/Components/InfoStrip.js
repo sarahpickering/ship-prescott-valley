@@ -18,7 +18,7 @@ const AddressStrip = styled.div`
     const InfoStrip = () => {
         return (
             <AddressStrip>
-                📍 7421 E. Addis Ave, Unit B, Prescott Valley, AZ 86314 |  📞 PHONE NUMBER HERE
+                📍 7421 E. Addis Ave, Unit B, Prescott Valley, AZ 86314 |  📞 Phone: 928.227.1451 | 📠 Fax:  928.227.2407
             </AddressStrip>
         )
     }
