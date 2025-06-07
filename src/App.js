@@ -9,6 +9,7 @@ import InfoStrip from './Components/InfoStrip';
 import MailboxRental from './Components/MailboxRental';
 import Notary from './Components/Notary'
 import Footer from './Components/Footer';
+import Contact from './Components/Contact';
 
 import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components'
@@ -49,6 +50,7 @@ function App() {
             <Route path="/shipping" element={<WorldwideShipping />} />
             <Route path ="/business" element={<BusinessSolutions />} />
             <Route path ="/faq" element={<FAQ />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </MainContent>
         <InfoStrip />
