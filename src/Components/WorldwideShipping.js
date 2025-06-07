@@ -6,14 +6,15 @@ const Container = styled.div`
   max-width: 1000px;
   margin: auto;
   padding: 40px 20px;
-  border: 10px solid #000b58;
+  border: 10px solid #cc0000;
+  background-color: #000b58;
 `;
 
 const Title = styled.h1`
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 20px;
-  color: #000b58;
+  color: #fff;
 `;
 
 const HeroSection = styled.div`
@@ -42,7 +43,7 @@ const Intro = styled.p`
   flex: 2;
   min-width: 300px;
   font-size: 1.7rem;
-  color: #555;
+  color: #fff;
   margin-bottom: 40px;
   line-height: 1.6;
 `;
@@ -50,14 +51,14 @@ const Intro = styled.p`
 const Section = styled.div`
   margin-bottom: 40px;
   text-align: center;
-  color: #000b58;
+  color: #fff;
 `;
 
 const List = styled.ul`
   list-style-position: inside;
   padding-left: 20px;
   line-height: 1.8;
-  color: #000b58;
+  color: #fff;
 `;
 
 const CTA = styled.div`
