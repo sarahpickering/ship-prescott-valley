@@ -1,3 +1,23 @@
+// import React from 'react'
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import ScrollToTop from './ScrollToTop';
+// import Header from './Components/Header';
+// import NavBar from './Components/NavBar';
+// import HeroSection from './Components/Hero';
+// import Home from './Components/Home'
+// import InfoStrip from './Components/InfoStrip';
+// import MailboxRental from './Components/MailboxRental';
+// import Notary from './Components/Notary'
+// import Footer from './Components/Footer';
+// import Contact from './Components/Contact';
+
+// import { createGlobalStyle } from 'styled-components'
+// import styled from 'styled-components'
+// import WorldwideShipping from './Components/WorldwideShipping';
+// import BusinessSolutions from './Components/BusinessSolutions';
+// import FAQ from './Components/FAQ';
+
+
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
@@ -30,7 +50,6 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-// Define main content container
 const MainContent = styled.div`
   padding-bottom: 100px;
   padding: 20px;
@@ -60,3 +79,5 @@ function App() {
 }
 
 export default App;
+
+
