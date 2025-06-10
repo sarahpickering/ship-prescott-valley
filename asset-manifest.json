@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/ship-prescott-valley/static/js/main.a1725ec0.js",
+    "static/media/shipping.png": "/ship-prescott-valley/static/media/shipping.761c8420e74207177d94.png",
+    "static/media/notary.png": "/ship-prescott-valley/static/media/notary.92fb8c80db6609f46aad.png",
+    "static/media/passport.jpeg": "/ship-prescott-valley/static/media/passport.5cccf59afe1b6e972f55.jpeg",
+    "static/media/businesssolutions.png": "/ship-prescott-valley/static/media/businesssolutions.ec4a1e79f846bcd7b03c.png",
+    "static/media/mailboxrentals.jpg": "/ship-prescott-valley/static/media/mailboxrentals.bf612cb0d47c751c6903.jpg",
+    "static/media/shipping.jpeg": "/ship-prescott-valley/static/media/shipping.f46b51799a53ed88dadf.jpeg",
+    "static/media/hero-image.PNG": "/ship-prescott-valley/static/media/hero-image.91b61c9a64d0249293f6.PNG",
+    "static/media/notary2.png": "/ship-prescott-valley/static/media/notary2.4f3fd2d345b473ed0f04.png",
+    "static/media/SPV.PNG": "/ship-prescott-valley/static/media/SPV.a4f76eec3c7598d2fc21.PNG",
+    "index.html": "/ship-prescott-valley/index.html",
+    "main.a1725ec0.js.map": "/ship-prescott-valley/static/js/main.a1725ec0.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a1725ec0.js"
+  ]
+}
