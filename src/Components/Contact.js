@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import emailjs from "@emailjs/browser";
 
 const Container = styled.div`
   padding: 40px 20px;
@@ -18,7 +19,6 @@ const Title = styled.h1`
 
 const Intro = styled.p`
   font-size: 1.1rem;
-  line-height: 1.6;
   color: #fff;
   text-align: center;
   margin-bottom: 40px;
@@ -34,20 +34,12 @@ const Form = styled.form`
 
 const Input = styled.input`
   padding: 12px;
-  font-size: 1rem;
-  border: 2px solid #fff;
   border-radius: 5px;
-  background-color: #fff;
-  color: #000;
 `;
 
 const Textarea = styled.textarea`
   padding: 12px;
-  font-size: 1rem;
-  border: 2px solid #fff;
   border-radius: 5px;
-  background-color: #fff;
-  color: #000;
 `;
 
 const Button = styled.button`
@@ -56,7 +48,6 @@ const Button = styled.button`
   padding: 12px 24px;
   font-size: 1rem;
   border-radius: 5px;
-  border: 5px solid #cc0000;
   cursor: pointer;
   transition: background-color 0.3s;
 
@@ -66,58 +57,39 @@ const Button = styled.button`
   }
 `;
 
-const Contact = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
-    if (res.ok) setSubmitted(true);
+
+    emailjs
+      .sendForm(
+        "your_service_id",    // from EmailJS
+        "your_template_id",   // from EmailJS
+        e.target,
+        "HZhfurtD0xwJzwIvd"        
+      )
+      .then(
+        () => setSubmitted(true),
+        (error) => alert("Failed to send email. " + error.text)
+      );
   };
 
   return (
     <Container>
       <Title>Contact Us</Title>
-      <Intro>Have a question or want to reach out? Fill out the form below and we’ll get back to you!</Intro>
-
+      <Intro>We’d love to hear from you! Fill out the form below.</Intro>
       {submitted ? (
-        <Intro>Thanks for your message! We’ll respond as soon as possible.</Intro>
+        <Intro>Thanks for your message! We'll be in touch shortly.</Intro>
       ) : (
-        <Form onSubmit={handleSubmit}>
-          <Input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            onChange={handleChange}
-          />
-          <Input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            onChange={handleChange}
-          />
-          <Textarea
-            name="message"
-            rows="5"
-            placeholder="Your Message"
-            required
-            onChange={handleChange}
-          />
+        <Form onSubmit={sendEmail}>
+          <Input name="name" type="text" placeholder="Your Name" required />
+          <Input name="email" type="email" placeholder="Your Email" required />
+          <Textarea name="message" rows="5" placeholder="Your Message" required />
           <Button type="submit">Send Message</Button>
         </Form>
       )}
     </Container>
   );
-};
-
-export default Contact;
+}
