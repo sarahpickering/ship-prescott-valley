@@ -6,19 +6,16 @@ import NavBar from './NavBar';
 
 const HeaderContainer = styled.header`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 10px 20px;
   margin: 0.05rem 1rem;
   background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-height: 100px; 
-
  
   @media (max-width: 1024px) {
     padding: 8px 15px;
     margin: 0.05rem 0.5rem;
-    max-height: 80px;
   }
 
   
@@ -27,7 +24,6 @@ const HeaderContainer = styled.header`
     padding: 5px 10px;
     margin: 0.05rem 0.25rem;
     text-align: center;
-    max-height: 150px; 
   }
 `;
 
