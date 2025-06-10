@@ -11,6 +11,14 @@ const ServicesContainer = styled.section`
     padding: 60px 20px;
     color: white;
     text-align: center;
+
+    @media (max-width: 1024px) {
+    padding: 40px 15px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 30px 10px;
+  }
 `;
 
 const ServicesTitle = styled.h2`
@@ -20,6 +28,16 @@ const ServicesTitle = styled.h2`
     font-size: 36px;
     margin-bottom: 40px;
     color: white;
+
+    @media (max-width: 1024px) {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 `;
 
 const ServicesGrid = styled.div`
@@ -27,6 +45,16 @@ const ServicesGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   align-items: stretch;
+
+  @media (max-width: 1024px) {
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
 `;
 
 
@@ -44,6 +72,18 @@ const ServicesCard = styled.div`
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+
+    @media (max-width: 1024px) {
+    max-width: 200px;
+    padding: 15px;
+    border-width: 4px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 100%; 
+    padding: 10px;
+    border-width: 3px;
+  }
 `;
 
 
@@ -52,15 +92,59 @@ const ServicesImage = styled.img`
     aspect-ratio: 4 / 3;
     border-radius: 8px;
     margin-bottom: 15px;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 8px;
+  }
 `;
 
 const ServicesDescription = styled.p`
     font-size: 16px;
     text-align: center;
+
+    @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
 `;
 
 const ContentWrapper = styled.div`
   flex-grow: 1;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 1024px) {
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 14px;
+    }
+  }
 `;
 
 const ServicesButton = styled(Link)`
@@ -78,6 +162,16 @@ const ServicesButton = styled(Link)`
     &:hover {
         background-color: #1e2a78;
     }
+
+    @media (max-width: 1024px) {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
 `;
 
 const Services = () => {
