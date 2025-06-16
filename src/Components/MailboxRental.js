@@ -54,7 +54,7 @@ const CTA = styled.div`
     a {
         display: inline-block;
         background-color: #fff;
-        color: #000B58;
+        color: #fff;
         padding: 12px 24px;
         font-size: 1rem;
         border-radius: 5px;
