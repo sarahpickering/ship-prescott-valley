@@ -183,9 +183,9 @@ const MailboxRental = () => {
                 can forward your mail to any address—even if you're out of state.
             </VirtualOption>
 
-            <CTA>
+            {/* <CTA>
                 <p>Call Us Today to Reserve Your Mailbox!<br />SALE: The first 50 small boxes will be just $28/month for the first year!</p>
-            </CTA>
+            </CTA> */}
         </Container>
     )
 }
