@@ -15,7 +15,7 @@ const Title = styled.h1`
     color: #fff;
     text-align:center;
     margin-bottom: 20px;
-;`
+`;
 
 const Intro = styled.p`
     font-size: 1.1rem;
@@ -184,7 +184,7 @@ const MailboxRental = () => {
             </VirtualOption>
 
             <CTA>
-                <p>Call Us Today to Reserve Your Mailbox!</br>SALE: The first 50 small boxes will be just $28/month for the first year!</CTA></p>
+                <p>Call Us Today to Reserve Your Mailbox!<br />SALE: The first 50 small boxes will be just $28/month for the first year!</p>
             </CTA>
         </Container>
     )
