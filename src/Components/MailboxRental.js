@@ -184,7 +184,7 @@ const MailboxRental = () => {
             </VirtualOption>
 
             <CTA>
-                <a href="/contact">Reserve Your Mailbox Today</a>
+                <p>Call Us Today to Reserve Your Mailbox!</br>SALE: The first 50 small boxes will be just $28/month for the first year!</CTA></p>
             </CTA>
         </Container>
     )
